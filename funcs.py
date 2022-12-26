@@ -238,7 +238,7 @@ class App(customtkinter.CTk):
         CurrentPats = cursor.fetchone()
         CurrentPatsStr=str(CurrentPats[0])
 
-        CounterText=("Patients Currently \nRegistered:  ")
+        CounterText=("Patients  \nRegistered: ")
         PatCounter=CounterText + CurrentPatsStr
         
 
@@ -408,7 +408,7 @@ class App(customtkinter.CTk):
             CurrentPats = cursor.fetchone()
             CurrentPatsStr=str(CurrentPats[0])
 
-            CounterText=("Patients Currently \nRegistered:  ")
+            CounterText=("Patients  \nRegistered: ")
             PatCounter=CounterText + CurrentPatsStr
             
             self.PatsRN = customtkinter.CTkLabel(self.sidebar_frame, text=(PatCounter), font=customtkinter.CTkFont(family="Microsoft YaHei UI Light", size=18, weight="bold"))
@@ -494,7 +494,7 @@ class App(customtkinter.CTk):
         DAvailFrame = customtkinter.CTkFrame(DocDataFrame, corner_radius=15)
         DAvailFrame.place(relx=0.02,rely=0.2175,relheight=0.7575,relwidth=0.96)
 
-        path = "DMahmood-Jan.png"
+        path = "Assets\DocSchedules\DMahmood-Jan.png"
         img = ImageTk.PhotoImage(Image.open(path))
         panel = Label(DAvailFrame, image=img)
         panel.photo = img
@@ -508,7 +508,7 @@ class App(customtkinter.CTk):
         DAvailFrame = customtkinter.CTkFrame(DocDataFrame, corner_radius=15)
         DAvailFrame.place(relx=0.02,rely=0.2175,relheight=0.7575,relwidth=0.96)
 
-        path = "DMahmood-Feb.png"
+        path = "Assets\DocSchedules\DMahmood-Feb.png"
         img = ImageTk.PhotoImage(Image.open(path))
         panel = Label(DAvailFrame, image=img)
         panel.photo = img
@@ -522,7 +522,7 @@ class App(customtkinter.CTk):
         DAvailFrame = customtkinter.CTkFrame(DocDataFrame, corner_radius=15)
         DAvailFrame.place(relx=0.02,rely=0.2175,relheight=0.7575,relwidth=0.96)
 
-        path = "DMahmood-March.png"
+        path = "Assets\DocSchedules\DMahmood-March.png"
         img = ImageTk.PhotoImage(Image.open(path))
         panel = Label(DAvailFrame, image=img)
         panel.photo = img
@@ -537,7 +537,7 @@ class App(customtkinter.CTk):
         DAvailFrame = customtkinter.CTkFrame(DocDataFrame, corner_radius=15)
         DAvailFrame.place(relx=0.02,rely=0.2175,relheight=0.7575,relwidth=0.96)
 
-        path = "DAnita-Jan.png"
+        path = "Assets\DocSchedules\DAnita-Jan.png"
         img = ImageTk.PhotoImage(Image.open(path))
         panel = Label(DAvailFrame, image=img)
         panel.photo = img
@@ -551,7 +551,7 @@ class App(customtkinter.CTk):
         DAvailFrame = customtkinter.CTkFrame(DocDataFrame, corner_radius=15)
         DAvailFrame.place(relx=0.02,rely=0.2175,relheight=0.7575,relwidth=0.96)
 
-        path = "DAnita-Feb.png"
+        path = "Assets\DocSchedules\DAnita-Feb.png"
         img = ImageTk.PhotoImage(Image.open(path))
         panel = Label(DAvailFrame, image=img)
         panel.photo = img
@@ -565,7 +565,7 @@ class App(customtkinter.CTk):
         DAvailFrame = customtkinter.CTkFrame(DocDataFrame, corner_radius=15)
         DAvailFrame.place(relx=0.02,rely=0.2175,relheight=0.7575,relwidth=0.96)
 
-        path = "DAnita-March.png"
+        path = "Assets\DocSchedules\DAnita-March.png"
         img = ImageTk.PhotoImage(Image.open(path))
         panel = Label(DAvailFrame, image=img)
         panel.photo = img
@@ -580,7 +580,7 @@ class App(customtkinter.CTk):
         DAvailFrame = customtkinter.CTkFrame(DocDataFrame, corner_radius=15)
         DAvailFrame.place(relx=0.02,rely=0.2175,relheight=0.7575,relwidth=0.96)
 
-        path = "DReddy-Jan.png"
+        path = "Assets\DocSchedules\DReddy-Jan.png"
         img = ImageTk.PhotoImage(Image.open(path))
         panel = Label(DAvailFrame, image=img)
         panel.photo = img
@@ -594,7 +594,7 @@ class App(customtkinter.CTk):
         DAvailFrame = customtkinter.CTkFrame(DocDataFrame, corner_radius=15)
         DAvailFrame.place(relx=0.02,rely=0.2175,relheight=0.7575,relwidth=0.96)
 
-        path = "DReddy-Feb.png"
+        path = "Assets\DocSchedules\DReddy-Feb.png"
         img = ImageTk.PhotoImage(Image.open(path))
         panel = Label(DAvailFrame, image=img)
         panel.photo = img
@@ -608,7 +608,7 @@ class App(customtkinter.CTk):
         DAvailFrame = customtkinter.CTkFrame(DocDataFrame, corner_radius=15)
         DAvailFrame.place(relx=0.02,rely=0.2175,relheight=0.7575,relwidth=0.96)
 
-        path = "DReddy-March.png"
+        path = "Assets\DocSchedules\DReddy-March.png"
         img = ImageTk.PhotoImage(Image.open(path))
         panel = Label(DAvailFrame, image=img)
         panel.photo = img
@@ -623,7 +623,7 @@ class App(customtkinter.CTk):
         DAvailFrame = customtkinter.CTkFrame(DocDataFrame, corner_radius=15)
         DAvailFrame.place(relx=0.02,rely=0.2175,relheight=0.7575,relwidth=0.96)
 
-        path = "DAyesha-Jan.png"
+        path = "Assets\DocSchedules\DAyesha-Jan.png"
         img = ImageTk.PhotoImage(Image.open(path))
         panel = Label(DAvailFrame, image=img)
         panel.photo = img
@@ -637,7 +637,7 @@ class App(customtkinter.CTk):
         DAvailFrame = customtkinter.CTkFrame(DocDataFrame, corner_radius=15)
         DAvailFrame.place(relx=0.02,rely=0.2175,relheight=0.7575,relwidth=0.96)
 
-        path = "DAyesha-Feb.png"
+        path = "Assets\DocSchedules\DAyesha-Feb.png"
         img = ImageTk.PhotoImage(Image.open(path))
         panel = Label(DAvailFrame, image=img)
         panel.photo = img
@@ -651,7 +651,7 @@ class App(customtkinter.CTk):
         DAvailFrame = customtkinter.CTkFrame(DocDataFrame, corner_radius=15)
         DAvailFrame.place(relx=0.02,rely=0.2175,relheight=0.7575,relwidth=0.96)
 
-        path = "DAyesha-March.png"
+        path = "Assets\DocSchedules\DAyesha-March.png"
         img = ImageTk.PhotoImage(Image.open(path))
         panel = Label(DAvailFrame, image=img)
         panel.photo = img
@@ -689,7 +689,7 @@ class App(customtkinter.CTk):
         CurrentPats = cursor.fetchone()
         CurrentPatsStr=str(CurrentPats[0])
 
-        CounterText=("Patients Currently \nRegistered:  ")
+        CounterText=("Patients \nRegistered: ")
         PatCounter=CounterText + CurrentPatsStr
         
         self.PatsRN = customtkinter.CTkLabel(self.sidebar_frame, text=(PatCounter), font=customtkinter.CTkFont(family="Microsoft YaHei UI Light", size=18, weight="bold"))
