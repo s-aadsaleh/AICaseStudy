@@ -226,7 +226,7 @@ class App(customtkinter.CTk):
         self.sidebar_button_1.grid(row=1, column=0, padx=20, pady=10)
         self.sidebar_button_2 = customtkinter.CTkButton(self.sidebar_frame, text="Billing",font=customtkinter.CTkFont(family="Microsoft YaHei UI", size=15), command=self.bill_start)
         self.sidebar_button_2.grid(row=2, column=0, padx=20, pady=10)
-        self.sidebar_button_3 = customtkinter.CTkButton(self.sidebar_frame, text="Doctor's Availibility",font=customtkinter.CTkFont(family="Microsoft YaHei UI", size=14), command=self.doc_start)
+        self.sidebar_button_3 = customtkinter.CTkButton(self.sidebar_frame, text="Doctor's Availability",font=customtkinter.CTkFont(family="Microsoft YaHei UI", size=14), command=self.doc_start)
         self.sidebar_button_3.grid(row=3, column=0, padx=20, pady=10)
 
         #Patient Counter
@@ -810,7 +810,7 @@ class App(customtkinter.CTk):
         DocDataFrame.grid(row=0, column=1, rowspan=9, columnspan=10, padx=(20, 20), pady=(20, 20), sticky="nsew")
 
 
-        self.DocStartLabel = customtkinter.CTkLabel(DocDataFrame, text="Doctor's Availibility", font=customtkinter.CTkFont(family="Microsoft YaHei UI Light", size=25, weight="bold")).place(relx=0.02,rely=0.035)
+        self.DocStartLabel = customtkinter.CTkLabel(DocDataFrame, text="Doctor's Availability", font=customtkinter.CTkFont(family="Microsoft YaHei UI Light", size=25, weight="bold")).place(relx=0.02,rely=0.035)
 
         self.DMahmoodButton = customtkinter.CTkButton(DocDataFrame, fg_color="transparent", text="Doctor Mahmood", command=self.DMah, font=customtkinter.CTkFont(family="Microsoft YaHei UI Light", size=16), border_width=3, text_color=("gray10", "#DCE4EE"))
         self.DMahmoodButton.place(relx=0.025,rely=0.12,relwidth=0.22,height=35)
@@ -1018,10 +1018,8 @@ class App(customtkinter.CTk):
 
         PatMainDataFrame.grid_forget()
         DocDataFrame.grid_forget()
-
     def change_appearance_mode_event(self, new_appearance_mode: str):
         customtkinter.set_appearance_mode(new_appearance_mode)
-
     def change_scaling_event(self, new_scaling: str):
         new_scaling_float = int(new_scaling.replace("%", "")) / 100
         customtkinter.set_widget_scaling(new_scaling_float)
@@ -1029,7 +1027,6 @@ class App(customtkinter.CTk):
     # destroying window functions
     def destroy_del_unsuccess(self):
         del_unsuccess_screen.destroy()
-
     def destroy_del_success(self):
         del_success_screen.destroy()
         
@@ -1044,14 +1041,11 @@ class App(customtkinter.CTk):
         
         self.PatsRN = customtkinter.CTkLabel(self.sidebar_frame, text=(PatCounter), font=customtkinter.CTkFont(family="Microsoft YaHei UI Light", size=18, weight="bold"))
         self.PatsRN.grid(row=4, column=0, padx=20, pady=(20, 10))
-
     def destroy_in_unsuccess(self):
         in_unsuccess_screen.destroy()
-
     def destroy_in_success(self):
         in_success_screen.destroy()
         self.pat_start()
-
 
 if __name__ == "__main__":
     app = Authentication()
